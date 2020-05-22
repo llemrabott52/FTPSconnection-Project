@@ -1,0 +1,183 @@
+tolba@tolba-ThinkPad-T440p:~$ sudo -s
+[sudo] password for tolba: 
+root@tolba-ThinkPad-T440p:/home/tolba# apt-get update
+Hit:1 http://archive.ubuntu.com/ubuntu bionic InRelease                        
+Get:2 http://security.ubuntu.com/ubuntu focal-security InRelease [107 kB]      
+Hit:3 http://mr.archive.ubuntu.com/ubuntu focal InRelease                    
+Get:4 http://mr.archive.ubuntu.com/ubuntu focal-updates InRelease [107 kB]
+Get:5 http://mr.archive.ubuntu.com/ubuntu focal-backports InRelease [98.3 kB]
+Fetched 312 kB in 3s (111 kB/s)    
+Reading package lists... Done
+root@tolba-ThinkPad-T440p:/home/tolba# apt-get install postgresql postgresql-contrib
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  cinnamon-desktop-data cinnamon-l10n debugedit ebtables g++-7 gcc-8-base:i386
+  gir1.2-harfbuzz-0.0 gir1.2-mutter-2 gist libargon2-0 libavcodec57
+  libavfilter6 libavformat57 libavresample3 libavutil55 libbfio1 libbind9-160
+  libboost-date-time1.65.1 libboost-filesystem1.65.1 libboost-iostreams1.65.1
+  libboost-locale1.65.1 libboost-system1.65.1 libboost-thread1.65.1
+  libcapnp-0.6.1 libcdio17 libcinnamon-desktop4 libcomerr2:i386 libcrystalhd3
+  libdns-export1100 libdns1100 libdouble-conversion1 libdvdread4
+  libevent-2.1-6 libffi6:i386 libfprint-2-2 libfprint-2-tod1 libgdbm5
+  libgl1-mesa-glx:i386 libgmime-3.0-0 libgnome-desktop-3-17 libgraphite2-dev
+  libgsoap-2.8.60 libgspell-1-1 libgssdp-1.2-0 libgupnp-1.2-0
+  libgupnp-av-1.0-2 libgupnp-dlna-2.0-3 libgweather-3-15 libharfbuzz-dev
+  libharfbuzz-gobject0 libhogweed4:i386 libhttp-parser2.7.1 libhunspell-1.6-0
+  libicu-le-hb-dev libicu-le-hb0 libicu60:i386 libiculx60 libip4tc0 libip6tc0
+  libiptc0 libirs160 libisc-export169 libisc169 libisccc160 libisccfg160
+  libisl19 libjemalloc1 libjs-async libjs-node-uuid libjs-sphinxdoc libjson-c3
+  liblouis14 liblouisutdml8 liblwres160 libmagickcore-6.q16-3
+  libmagickcore-6.q16-3-extra libmagickwand-6.q16-3 libmozjs-52-0
+  libmutter-2-0 libmysofa0 libmysqlclient20 libncurses5:i386
+  libnemo-extension1 libnetcf1 libnettle6:i386 libnss-myhostname libntfs-3g88
+  liborcus-0.13-0 libossp-uuid16 libperl5.26 libpoppler73 libpostproc54
+  libprocps6 libprotobuf-lite10 libprotobuf10 libpython-all-dev libpython2-dev
+  libpython2.7-dev libqgsttools-p1 libqpdf21 libraw16 librpmbuild8 librpmsign8
+  librsync1 libruby2.5 libsane1 libsane1:i386 libsdl-ttf2.0-0 libsndio6.1:i386
+  libspeexdsp1:i386 libsqlite0 libstdc++-7-dev libswresample2 libswscale4
+  libtinfo5:i386 libvpx5 libx264-152 libx265-146 libxen-4.9 libxenstore3.0
+  libxentoolcore1 linux-headers-4.15.0-99 linux-headers-4.15.0-99-generic
+  linux-image-4.15.0-99-generic linux-modules-4.15.0-99-generic
+  linux-modules-extra-4.15.0-99-generic node-async node-commander
+  node-cookie-jar node-node-uuid nplan pgdg-keyring python-all python-all-dev
+  python-asn1crypto python-cairo python-certifi python-cffi-backend
+  python-chardet python-configparser python-crypto python-cryptography
+  python-dbus python-entrypoints python-enum34 python-gi python-gi-cairo
+  python-greenlet python-httplib2 python-idna python-ipaddress python-keyring
+  python-libxml2 python-lockfile python-monotonic python-oauth python-openssl
+  python-pycurl python-rpm python-simplejson python-six python-sqlite
+  python-xdg python-zope.interface python2-dev python2.7-dev
+  python3-asn1crypto python3-oauth python3-zope.interface rpm ruby-blankslate
+  ruby-did-you-mean ruby2.5 wine-stable
+Use 'apt autoremove' to remove them.
+The following additional packages will be installed:
+  libllvm10 postgresql-12 postgresql-client-12
+Suggested packages:
+  postgresql-doc postgresql-doc-12
+The following NEW packages will be installed:
+  libllvm10 postgresql postgresql-12 postgresql-client-12 postgresql-contrib
+0 upgraded, 5 newly installed, 0 to remove and 18 not upgraded.
+Need to get 29.8 MB of archives.
+After this operation, 119 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://mr.archive.ubuntu.com/ubuntu focal/main amd64 libllvm10 amd64 1:10.0.0-4ubuntu1 [15.3 MB]
+Get:2 http://mr.archive.ubuntu.com/ubuntu focal/main amd64 postgresql-client-12 amd64 12.2-4 [1,042 kB]
+Get:3 http://mr.archive.ubuntu.com/ubuntu focal/main amd64 postgresql-12 amd64 12.2-4 [13.4 MB]
+Get:4 http://mr.archive.ubuntu.com/ubuntu focal/main amd64 postgresql all 12+214 [4,004 B]
+Get:5 http://mr.archive.ubuntu.com/ubuntu focal/main amd64 postgresql-contrib all 12+214 [4,004 B]
+Fetched 29.8 MB in 2min 35s (192 kB/s)                                         
+Preconfiguring packages ...
+Selecting previously unselected package libllvm10:amd64.
+(Reading database ... 294314 files and directories currently installed.)
+Preparing to unpack .../libllvm10_1%3a10.0.0-4ubuntu1_amd64.deb ...
+Unpacking libllvm10:amd64 (1:10.0.0-4ubuntu1) ...
+Selecting previously unselected package postgresql-client-12.
+Preparing to unpack .../postgresql-client-12_12.2-4_amd64.deb ...
+Unpacking postgresql-client-12 (12.2-4) ...
+Selecting previously unselected package postgresql-12.
+Preparing to unpack .../postgresql-12_12.2-4_amd64.deb ...
+Unpacking postgresql-12 (12.2-4) ...
+Selecting previously unselected package postgresql.
+Preparing to unpack .../postgresql_12+214_all.deb ...
+Unpacking postgresql (12+214) ...
+Selecting previously unselected package postgresql-contrib.
+Preparing to unpack .../postgresql-contrib_12+214_all.deb ...
+Unpacking postgresql-contrib (12+214) ...
+Setting up libllvm10:amd64 (1:10.0.0-4ubuntu1) ...
+Setting up postgresql-client-12 (12.2-4) ...
+update-alternatives: using /usr/share/postgresql/12/man/man1/psql.1.gz to provide /usr/share/man/man1/psql.1.gz (psql.1.gz) in auto mode
+Setting up postgresql-12 (12.2-4) ...
+Creating new PostgreSQL cluster 12/main ...
+/usr/lib/postgresql/12/bin/initdb -D /var/lib/postgresql/12/main --auth-local peer --auth-host md5
+The files belonging to this database system will be owned by user "postgres".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "en_US.UTF-8".
+The default database encoding has accordingly been set to "UTF8".
+The default text search configuration will be set to "english".
+
+Data page checksums are disabled.
+
+fixing permissions on existing directory /var/lib/postgresql/12/main ... ok
+creating subdirectories ... ok
+selecting dynamic shared memory implementation ... posix
+selecting default max_connections ... 100
+selecting default shared_buffers ... 128MB
+selecting default time zone ... Africa/Nouakchott
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+Success. You can now start the database server using:
+
+    pg_ctlcluster 12 main start
+
+Ver Cluster Port Status Owner    Data directory              Log file
+12  main    5433 down   postgres /var/lib/postgresql/12/main /var/log/postgresql/postgresql-12-main.log
+update-alternatives: using /usr/share/postgresql/12/man/man1/postmaster.1.gz to provide /usr/share/man/man1/postmaster.1.gz (postmaster.1.gz) in auto mode
+Setting up postgresql-contrib (12+214) ...
+Setting up postgresql (12+214) ...
+Processing triggers for postgresql-common (214) ...
+Building PostgreSQL dictionaries from installed myspell/hunspell packages...
+  en_us
+Removing obsolete dictionary files:
+Processing triggers for libc-bin (2.31-0ubuntu9) ...
+root@tolba-ThinkPad-T440p:/home/tolba# ls /etc/postgresql/12/main
+conf.d       pg_ctl.conf  pg_ident.conf    start.conf
+environment  pg_hba.conf  postgresql.conf
+root@tolba-ThinkPad-T440p:/home/tolba# service postgresql
+Usage: /etc/init.d/postgresql {start|stop|restart|reload|force-reload|status} [version ..]
+root@tolba-ThinkPad-T440p:/home/tolba# service postgresql status
+● postgresql.service - PostgreSQL RDBMS
+     Loaded: loaded (/lib/systemd/system/postgresql.service; enabled; vendor pr>
+     Active: active (exited) since Thu 2020-05-21 23:49:58 GMT; 1h 5min ago
+   Main PID: 2507 (code=exited, status=0/SUCCESS)
+      Tasks: 0 (limit: 4264)
+     Memory: 0B
+     CGroup: /system.slice/postgresql.service
+
+May 21 23:49:58 tolba-ThinkPad-T440p systemd[1]: Starting PostgreSQL RDBMS...
+May 21 23:49:58 tolba-ThinkPad-T440p systemd[1]: Finished PostgreSQL RDBMS.
+root@tolba-ThinkPad-T440p:/home/tolba# sudo su postgres
+postgres@tolba-ThinkPad-T440p:/home/tolba$ quit
+
+Command 'quit' not found, did you mean:
+
+  command 'quiz' from deb bsdgames (2.17-28build1)
+  command 'luit' from deb x11-utils (7.7+5)
+  command 'qgit' from deb qgit (2.9-1build1)
+  command 'quilt' from deb quilt (0.65-3)
+
+Try: apt install <deb name>
+
+postgres@tolba-ThinkPad-T440p:/home/tolba$ psql
+could not change directory to "/home/tolba": Permission denied
+psql (12.2 (Ubuntu 12.2-4), server 9.6.17)
+Type "help" for help.
+
+postgres=# \l
+postgres=# \du
+postgres=# alter user postgres with password 'rootroot'
+postgres-# alter user postgres with password 'rootroot';
+ERROR:  syntax error at or near "alter"
+LINE 2: alter user postgres with password 'rootroot';
+        ^
+postgres=# ALTER USER postgres with PASSWORD 'rootroot';
+ALTER ROLE
+postgres=# CREATE USER tolba WITH PASSWORD 'tolba'
+postgres-# CREATE USER tolba WITH PASSWORD 'tolba';
+ERROR:  syntax error at or near "CREATE"
+LINE 2: CREATE USER tolba WITH PASSWORD 'tolba';
+        ^
+postgres=# CREATE USER tolba WITH PASSWORD 'tolba';
+ERROR:  role "tolba" already exists
+postgres=# q
+postgres-# \q
+postgres@tolba-ThinkPad-T440p:/home/tolba$ exit
+exit
+root@tolba-ThinkPad-T440p:/home/tolba# man psql
+root@tolba-ThinkPad-T440p:/home/tolba# ^C
+root@tolba-ThinkPad-T440p:/home/tolba# 
